@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import QuizTopicCart from "../QuizTopicCart/QuizTopicCart";
 import "./Header.css";
 
 const Header = () => {
@@ -17,6 +16,7 @@ const Header = () => {
           </p>
           <button className="explore-btn">
             <a href="#homeTopic">Go to Topics</a>
+            {/* <Link to="/topics"></Link> */}
           </button>{" "}
         </div>
       </div>

@@ -1,6 +1,4 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 
 const QuizTopicCart = ({ topic }) => {
   const { id, name, logo, total } = topic;

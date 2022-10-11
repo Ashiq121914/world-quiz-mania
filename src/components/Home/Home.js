@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <Header></Header>
-      <div className="row justify-content-center mx-auto my-5 w-100">
+      <div className="row mx-auto justify-content-center my-5 w-100">
         {topics.data.map((topic) => (
           <QuizTopicCart key={topic.id} topic={topic}></QuizTopicCart>
         ))}
