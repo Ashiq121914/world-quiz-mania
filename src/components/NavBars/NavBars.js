@@ -2,12 +2,11 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 import "./NavBars.css";
 const NavBars = () => {
   return (
-    <Navbar expand="lg" className="navBar fixed-top">
+    <Navbar expand="lg" className="navBar">
       <Container fluid>
         <Navbar href="/home" className="navBrand">
           WorldQuizMania

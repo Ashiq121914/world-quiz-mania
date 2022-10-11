@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import QuizTopicCart from "../QuizTopicCart/QuizTopicCart";
 import "./Header.css";
 
 const Header = () => {
@@ -15,7 +16,7 @@ const Header = () => {
             participate on multi topic quiz.
           </p>
           <button className="explore-btn">
-            <Link to="/topics">Go to Topics</Link>
+            <a href="#homeTopic">Go to Topics</a>
           </button>{" "}
         </div>
       </div>
