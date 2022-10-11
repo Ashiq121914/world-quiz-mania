@@ -1,0 +1,21 @@
+.navBar{
+    background-color:#3A28A7 ;
+    padding: 10px 0;
+}
+.navBrand{
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    margin-left: 40px;
+}
+.navLink{
+    width: 100%;
+    justify-content: end;
+    margin-right: 60px;
+}
+.navLink a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+}
