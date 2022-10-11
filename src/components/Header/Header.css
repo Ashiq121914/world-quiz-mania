@@ -1,0 +1,75 @@
+.header{
+position: relative;
+width: 100%;
+height: auto;
+text-align: center;
+background: url('../image/home-education-1.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,.5) ;
+}
+.header-section{
+    position: relative;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.header-text h2{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+.header-text p{
+    width: 75%;
+    margin:0 auto;
+    font-size: 17px;
+    font-weight: normal;
+    color: white;
+    line-height: 22px;
+}
+
+.header-text button{
+    width: 170px;
+    height: 50px;
+    margin-top: 40px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: #3a28a7;
+    border: none;
+}
+
+.header-text button a{
+    text-decoration: none;
+    color: white;
+}
+
+@media(max-width:768px){
+    .header-section{
+        width: 100%;
+        padding: 0 50px;
+    }
+    .header-text h2{
+        font-size: 30px;
+    }
+    .header-text p{
+        width: 100%;
+        font-size: 13px;
+    }
+
+}
