@@ -15,9 +15,9 @@ const Statistics = () => {
   const data = useLoaderData();
 
   return (
-    <div className="d-flex justify-content-center mt-5">
+    <ResponsiveContainer className="mt-5" width="100%" height={600}>
       <AreaChart
-        width={800}
+        width={600}
         height={400}
         data={data.data}
         margin={{
@@ -33,7 +33,7 @@ const Statistics = () => {
         <Tooltip />
         <Area type="monotone" dataKey="total" stroke="#8884d8" fill="#8884d8" />
       </AreaChart>
-    </div>
+    </ResponsiveContainer>
   );
 };
 
