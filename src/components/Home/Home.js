@@ -10,9 +10,9 @@ const Home = () => {
     <div>
       <Header></Header>
       <div className="row mx-auto justify-content-center my-5 w-100">
-        {topics.data.map((topic) => (
-          <QuizTopicCart key={topic.id} topic={topic}></QuizTopicCart>
-        ))}
+        {topics.data.map((topic) => {
+          return <QuizTopicCart key={topic.id} topic={topic}></QuizTopicCart>;
+        })}
       </div>
     </div>
   );
