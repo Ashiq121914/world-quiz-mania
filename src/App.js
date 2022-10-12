@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import Quiz from "./components/Quiz/Quiz";
 import Statistics from "./components/Statistics/Statistics";
 import Topic from "./components/Topic/Topic";
+import Wrong from "./components/Wrong/Wrong";
 import Main from "./Layout/Main";
 
 function App() {
@@ -52,6 +53,10 @@ function App() {
           element: <Blog></Blog>,
         },
       ],
+    },
+    {
+      path: "*",
+      element: <Wrong></Wrong>,
     },
   ]);
   return (

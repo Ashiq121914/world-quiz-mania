@@ -1,4 +1,3 @@
-import React from "react";
 import { useLoaderData } from "react-router-dom";
 import QuizDetails from "../QuizDetails/QuizDetails";
 
@@ -8,9 +7,13 @@ const Quiz = () => {
 
   return (
     <div>
-      {data.map((question) => {
+      {data.map((question, idx) => {
         return (
-          <QuizDetails key={question.id} question={question}></QuizDetails>
+          <QuizDetails
+            idx={idx}
+            key={question.id}
+            question={question}
+          ></QuizDetails>
         );
       })}
     </div>

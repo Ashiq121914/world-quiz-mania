@@ -1,0 +1,13 @@
+.ansIcon{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.Qcard{
+    height: 70%;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 30px;
+}

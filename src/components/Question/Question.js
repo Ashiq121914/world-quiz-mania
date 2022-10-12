@@ -1,12 +1,24 @@
-import React from "react";
+import "./Question.css";
 
-const Question = ({ id, question }) => {
+const Question = ({ question, getData }) => {
+  const handleSubmit = (userAns) => {
+    getData(userAns);
+  };
+
   return (
     <div>
-      <label>
-        <input type="radio" value="male" name="question" />
-        {question}
-      </label>
+      <div className="options">
+        <label>
+          <input
+            type="radio"
+            value={question}
+            name="question"
+            onClick={(ans) => handleSubmit(ans.target.value)}
+          />
+
+          {question}
+        </label>
+      </div>
     </div>
   );
 };

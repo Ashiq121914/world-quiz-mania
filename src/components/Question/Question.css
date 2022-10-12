@@ -1,0 +1,16 @@
+.options{
+    font-size: 20px;
+    margin-left: 10px;
+    
+    
+    
+}
+.options:first-child{
+    margin-top:20px;
+}
+.options label{
+    padding-left: 30px;
+}
+.options input{
+    margin-bottom: 30px;
+}
